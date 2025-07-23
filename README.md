@@ -22,9 +22,9 @@ While there are multiple ways to add adversarial noise, iterative FGSM / PGD is 
 ### 2. Validation
 #### 2.1 Are the noisy images classified as the predefined wrong classes?
 Validating this question is straight-forward: 
-for an input image $I$, and a predefined class $y_target$, the classifier should incorrectly predict the attacked image, $I_noise$, as class $y_target$.
+for an input image $I$, and a predefined class $y_{target}$, the classifier should incorrectly predict the attacked image, $I_{noise}$, as class $y_{target}$.
 
-Ideally, the classifier should correctly predict $I$ as the true class $y_true$.
+Ideally, the classifier should correctly predict $I$ as the true class $y_{true}$.
 
 In this mini project, we only validate this aspect on images that are correctly predicted before being attacked.
 
